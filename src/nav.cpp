@@ -26,7 +26,7 @@ int main(int argc, char** argv){
 	ros::NodeHandle n;
 
 	learnpos();
-    docking();
+    
 	ros::spinOnce();
 	
 
@@ -58,7 +58,7 @@ int main(int argc, char** argv){
 		std::cout << "repeat route? y/n\n";
 		std::cin >> choice;
 	}
-	
+	docking();
 	return 0;
 }
 
