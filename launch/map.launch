@@ -1,5 +1,5 @@
 <launch>
-	<arg name="map_file" value="$(find navpac)/maps/hallway_map.yaml.yaml"> </arg>	
+	<arg name="map_file" value="$(find navpac)/maps/hall_of_fame.yaml"> </arg>	
 	<node pkg="map_server" type="map_server" name="map_server" args="$(arg map_file)">
 		
 	</node>
