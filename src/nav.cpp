@@ -35,32 +35,19 @@ int main(int argc, char** argv){
 	{
 		
 		if (choice == 'y'){
-          while (goalReached = false)
-		  {
+        
 			 goalReached = moveToGoal(x1, py1);
-             goalReached = false;
-		  }
-		  
-			while (goalReached = false)
-			{
+        
+	
 				goalReached = moveToGoal(x2, y2);
-				goalReached = false;
-			}
+	
 			
 
-			
-				while (goalReached = false)
-				{
 				goalReached = moveToGoal(x3, y3);	
-				goalReached = false;
-				}
-				
+	
 			
-			while (goalReached = false)
-			{
 				goalReached = moveToGoal(x4, y4);
-				goalReached = false;
-			}
+		
 			
 				
 			

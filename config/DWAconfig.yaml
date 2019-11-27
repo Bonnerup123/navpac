@@ -35,7 +35,7 @@ dictitems:
       parameters: !!python/object/new:dynamic_reconfigure.encoding.Config
         state: []
       parent: 0
-      path_distance_bias: 64.0
+      path_distance_bias: 40.0
       prune_plan: false
       restore_defaults: false
       rot_stopped_vel: 0.4
@@ -66,7 +66,7 @@ dictitems:
   occdist_scale: 0.5
   oscillation_reset_angle: 0.2
   oscillation_reset_dist: 0.05
-  path_distance_bias: 64.0
+  path_distance_bias: 40.0
   prune_plan: false
   restore_defaults: false
   rot_stopped_vel: 0.4
