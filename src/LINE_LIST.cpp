@@ -46,8 +46,30 @@
    for (uint32_t i = 0; i < 1; ++i)
        {
         geometry_msgs::Point p;
-        p.x = -3;
-        p.y = -2;
+        p.x = 0;
+        p.y = 0;
+        p.z = 0;
+  
+        points.points.push_back(p);
+        line_strip.points.push_back(p);
+   
+       }
+   for (uint32_t i = 0; i < 1; ++i)
+       {
+        geometry_msgs::Point p;
+        p.x = -15;
+        p.y = -30;
+        p.z = 0;
+  
+        points.points.push_back(p);
+        line_strip.points.push_back(p);
+   
+       }
+   for (uint32_t i = 0; i < 1; ++i)
+       {
+        geometry_msgs::Point p;
+        p.x = 4;
+        p.y = 9;
         p.z = 0;
   
         points.points.push_back(p);
@@ -58,7 +80,7 @@
        {
         geometry_msgs::Point p;
         p.x = 5;
-        p.y = -2;
+        p.y = 7;
         p.z = 0;
   
         points.points.push_back(p);
@@ -68,30 +90,8 @@
    for (uint32_t i = 0; i < 1; ++i)
        {
         geometry_msgs::Point p;
-        p.x = 5;
-        p.y = -3;
-        p.z = 0;
-  
-        points.points.push_back(p);
-        line_strip.points.push_back(p);
-   
-       }
-   for (uint32_t i = 0; i < 1; ++i)
-       {
-        geometry_msgs::Point p;
-        p.x = -3;
-        p.y = -3;
-        p.z = 0;
-  
-        points.points.push_back(p);
-        line_strip.points.push_back(p);
-   
-       }
-   for (uint32_t i = 0; i < 1; ++i)
-       {
-        geometry_msgs::Point p;
-        p.x = -3;
-        p.y = -2;
+        p.x = 0;
+        p.y = 0;
         p.z = 0;
   
         points.points.push_back(p);
