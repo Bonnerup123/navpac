@@ -9,6 +9,7 @@ bool moveToGoal(double xGoal, double yGoal);
 void docking();
 void learnpos();
 
+//punkter paa ruten
 double x1 = 5.0;
 double py1 = -2.0;
 double x2 = 5.0;
