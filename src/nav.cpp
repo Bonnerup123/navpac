@@ -10,13 +10,13 @@ void docking();
 void learnpos();
 
 //punkter paa ruten
-double x1 = -0.1;
-double py1 = -2.7;
-double x2 = -2.0;
-double y2 = -2.0;
-double x3 = -0.4;
-double y3 = 1.4;
-double x4 = 2.5;
+double x1 = 2.96;
+double py1 = 3.63;
+double x2 = 0.98;
+double y2 = 3.97;
+double x3 = -0.46;
+double y3 = 0.91;
+double x4 = 2.79;
 double y4 = -0.6;
 
 bool goalReached = false;
@@ -46,7 +46,7 @@ int main(int argc, char** argv){
 				goalReached = moveToGoal(x3, y3);	
 	
 			
-				goalReached = moveToGoal(x4, y4);
+				goalReached = moveToGoal(x4, y4);		
 		
 			
 				
