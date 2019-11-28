@@ -1,10 +1,10 @@
 !!python/object/new:dynamic_reconfigure.encoding.Config
 dictitems:
-  cost_scaling_factor: 3.0
+  cost_scaling_factor: 5.0
   enabled: true
   groups: !!python/object/new:dynamic_reconfigure.encoding.Config
     dictitems:
-      cost_scaling_factor: 3.0
+      cost_scaling_factor: 5.0
       enabled: true
       groups: !!python/object/new:dynamic_reconfigure.encoding.Config
         state: []
