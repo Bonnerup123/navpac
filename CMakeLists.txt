@@ -137,6 +137,7 @@ include_directories(
 ## Declare a C++ executable
 add_executable(LINE_LIST src/LINE_LIST.cpp)
 add_executable(navigation src/nav.cpp)
+add_executable(click_sub src/click_sub.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -157,6 +158,10 @@ target_link_libraries(LINE_LIST
 )
 
 target_link_libraries(navigation
+  ${catkin_LIBRARIES}
+)
+
+target_link_libraries(click_sub
   ${catkin_LIBRARIES}
 )
 

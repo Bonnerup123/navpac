@@ -1,0 +1,8 @@
+<launch>
+	
+<node name="rviz" pkg="rviz" type="rviz" args="-d $(find navpac)/config/rviz_publishpoint.rviz"/>
+<arg name="map_file" value="$(find navpac)/maps/hall_of_fame.yaml"> </arg>	
+<node pkg="map_server" type="map_server" name="map_server" args="$(arg map_file)"/>
+<node name= "click_sub" type="click_sub" pkg="navpac" output="screen" launch-prefix="gnome-terminal --command"/>
+
+</launch>
