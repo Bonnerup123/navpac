@@ -57,8 +57,8 @@
    for (uint32_t i = 0; i < 1; ++i)
        {
         geometry_msgs::Point p;
-        p.x = 2.96;
-        p.y = 3.63;
+        p.x = -14.35;
+        p.y = -40.31;
         p.z = 0;
   
         points.points.push_back(p);
@@ -68,8 +68,8 @@
    for (uint32_t i = 0; i < 1; ++i)
        {
         geometry_msgs::Point p;
-        p.x = 0.92;
-        p.y = 3.97;
+        p.x = -22.00;
+        p.y = -40.96;
         p.z = 0;
   
         points.points.push_back(p);
@@ -79,8 +79,8 @@
    for (uint32_t i = 0; i < 1; ++i)
        {
         geometry_msgs::Point p;
-        p.x = -0.46;
-        p.y = 0.91;
+        p.x = -4.80;
+        p.y = 10.43;
         p.z = 0;
   
         points.points.push_back(p);
@@ -90,8 +90,8 @@
    for (uint32_t i = 0; i < 1; ++i)
        {
         geometry_msgs::Point p;
-        p.x = 2.79;
-        p.y = -0.98;
+        p.x = 0;
+        p.y = 0;
         p.z = 0;
   
         points.points.push_back(p);
