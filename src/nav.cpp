@@ -12,10 +12,10 @@ void learnpos();
 //punkter paa ruten
 double x1 = -14.35;
 double py1 = -40.31;
-double x2 = -22.00;
-double y2 = -40.96;
-double x3 = -4.80;
-double y3 = 10.43;
+double x2 = -18.65;
+double y2 = -37.49;
+double x3 = 0.0;
+double y3 = 0.0;
 double x4 = 0.0;
 double y4 = 0.0;
 
