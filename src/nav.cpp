@@ -10,10 +10,10 @@ void docking();
 void learnpos();
 
 //punkter paa ruten
-double x1 = -14.35;
-double py1 = -40.31;
-double x2 = -18.65;
-double y2 = -37.49;
+double x1 = -6.35;
+double py1 = -13.43;
+double x2 = 0.0;
+double y2 = 0.0;
 double x3 = 0.0;
 double y3 = 0.0;
 double x4 = 0.0;
