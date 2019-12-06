@@ -58,7 +58,7 @@
        {
         geometry_msgs::Point p;
         p.x = -6.35;
-        p.y = -13.43;
+        p.y = 13.43;
         p.z = 0;
   
         points.points.push_back(p);
