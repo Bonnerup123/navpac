@@ -6,7 +6,6 @@
 #include <actionlib/client/simple_client_goal_state.h>
 
 bool moveToGoal(double xGoal, double yGoal); //funktionsdefinationer til senere i koden
-void docking();
 void learnpos();
 
 //punkter paa ruten udtryk ved en vektor, så der er mulighed for at skrive koordinater på (x, y) form. gemt i en double som indeholder 8 bytes.
@@ -23,7 +22,6 @@ int main(int argc, char** argv){                                                
     
 	ros::spinOnce();                                                                //ros funktion som er vital for loop funktioner i ros loops
 	
-
 	char choice = 'y';                                                              //vi laver en char(1 byte) med startværdien y
 	while (choice == 'y')                                                           //loop som kører, hvis choice er y
 	{
@@ -34,18 +32,15 @@ moveToGoal(p1[0], p1[1]);                                                       
 
 moveToGoal(p2[0], p2[1]);	
 			
-
 moveToGoal(p3[0], p3[1]);	
-	
 			
 moveToGoal(p4[0], p4[1]);		
-		
-			
+				
 }                                                                                   // afslutning af if statement
 		std::cout << "repeat route? y/n\n";                                         // et cout, cin spørgsmål om ruten skal køre, ændres choice til alt andet end y, vil while loopet afslutte
 		std::cin >> choice;
 	}
-	docking();                                                                      // kalder dockingfunktionen som ikke virker
+                                                                      // kalder dockingfunktionen som ikke virker
 	return 0;                                                                       // afslutter programmet.
 }
 
@@ -85,36 +80,6 @@ bool moveToGoal(double xGoal, double yGoal){                                    
 
 }
 
-void docking(){
-	 // Create the client
-  actionlib::SimpleActionClient<kobuki_msgs::AutoDockingAction> docking_ac("dock_drive_action", true);
-  docking_ac.waitForServer();
-
-  // Create goal object
-  kobuki_msgs::AutoDockingGoal goal;
-
-  // Assign initial state
-  actionlib::SimpleClientGoalState dock_state = actionlib::SimpleClientGoalState::LOST;
-
-  // Send the goal
-  docking_ac.sendGoal(goal);
-
-  ros::Time time = ros::Time::now();
-
-  // Monitor progress
-  while (!docking_ac.waitForResult(ros::Duration(3))) {
-
-    dock_state = docking_ac.getState();
-    ROS_INFO("Docking status: %s",dock_state.toString().c_str());
-
-    if (ros::Time::now() > (time+ros::Duration(20000))) {
-      ROS_INFO("Docking took more than 20 seconds, canceling.");
-      docking_ac.cancelGoal();
-      break;
-    }// end if
-  }// end while
-}
-
 void learnpos(){                                                                  //funktionsnavn. void betyder at den ikke returnerer noget.
 
     ros::NodeHandle r;                                                            //nodehandle til funktionen, er nok egentlig ikke nødvendigt, men hey.. det virker
@@ -126,7 +91,6 @@ void learnpos(){                                                                
     for(int i = 0; i < 35; i++)                                                   // et for-loop der kører 35 omgange, det er beregnet ved "baglæns korrektion"
     {
         cmd_vel_pub.publish(cmd_vel_message);                                     //publish beskeden om den angulære accelleration.
-        ros::Duration(0.5).sleep();                                               // en besked om at køre beskeden i kun et halvt sekund. Dette gør vi fordi cmd_vel_messege kører i et helt sekund, og for at undgå hak i runden, skal loopet starte igen, så der er en ny besked til robotten.
-        
+        ros::Duration(0.5).sleep();                                               // en besked om at køre beskeden i kun et halvt sekund. Dette gør vi fordi cmd_vel_messege kører i et helt sekund, og for at undgå hak i runden, skal loopet starte igen, så der er en ny besked til robotten.  
     }
 }
