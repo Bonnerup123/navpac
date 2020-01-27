@@ -9,9 +9,9 @@ bool moveToGoal(double xGoal, double yGoal); //funktionsdefinationer til senere 
 void learnpos();
 
 //punkter paa ruten udtryk ved en vektor, så der er mulighed for at skrive koordinater på (x, y) form. gemt i en double som indeholder 8 bytes.
-double p1[2] = {-4, -7.5};
-double p2[2] = {0, 0};
-double p3[2] = {0, 0};
+double p1[2] = {-1.1, -5.5};
+double p2[2] = {-3.4, -5.1};
+double p3[2] = {1.0, 4.4};
 double p4[2] = {0, 0};
 
 int main(int argc, char** argv){                                                    //mainfunktion
